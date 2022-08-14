@@ -228,4 +228,6 @@ def data_loader(X_root, y_root, input_feature, output_feature, picture_name="inp
     # TODO: 是否使用三维化
     X_data, y_data = __Compose(X_data, y_data)
 
+    print(X_data.shape, y_data.shape)
+
     return X_data, y_data

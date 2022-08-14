@@ -21,8 +21,8 @@ def main():
     if not os.path.exists(model_save_dir):
         os.makedirs(model_save_dir)
 
-    data_dir = r"grf_force_pre_data/input_feature"  # 输入特征读取路径
-    label_dir = r"grf_force_pre_data/output_feature"  # 输出特征读取路径
+    data_dir = r"grf_force_pre_data/train/input_feature"  # 输入特征读取路径
+    label_dir = r"grf_force_pre_data/train/output_feature"  # 输出特征读取路径
 
     model_list = {"Neural": NeuralNetwork, "Lstm": LstmRNN, "FCNs": FCNs}
 
@@ -42,6 +42,7 @@ def main():
     lr = cfg['TRAIN']['LR']  # 学习率
     new = cfg['TRAIN']['NEW']  # 是否重新训练网络
     model_path = cfg['TRAIN']['MODEL_PATH']  # 模型读取路径
+    output_dim = cfg['TRAIN']['OUTPUT_DIM']
 
     # 设置随机数
     set_random_seed(seed=seed, benchmark=True)
@@ -51,7 +52,7 @@ def main():
     print("device: {}".format(device))
 
     # 分割数据集
-    subject_list = [re.findall('(\d+)', file)[0] for file in os.listdir('grf_force_pre_data/input_feature')]
+    subject_list = [re.findall('(\d+)', file)[0] for file in os.listdir('grf_force_pre_data/train/input_feature')]
     train_list, val_list = train_test_split(subject_list, test_size=0.2, random_state=data_seed)
 
     print(train_list, val_list)
@@ -62,7 +63,6 @@ def main():
     # 获得输入、输出大小
     input_dim = 3
     hidden_dim = 256
-    output_dim = 3
 
     trainDataLoader = DataLoader(train_set, batch_size=batch_size, shuffle=True, drop_last=True)
     valDataLoader = DataLoader(val_set, batch_size=1, shuffle=False)
