@@ -1,0 +1,1130 @@
+successfully loaded config file:  {'MODEL': {'TYPE': 'LeNET'}, 'TRAIN': {'OUTPUT_DIM': 3, 'LR': 0.0001, 'EPOCHS': 100, 'BATCH_SIZE': 2, 'IS_MIXED': True, 'INTERVALS': 100, 'SEED': 123, 'DATASEED': 112, 'DECAY': 0.0005, 'NEW': True, 'MODEL_PATH': './checkpoints/LeNET_checkpoint_final.pth'}}
+device: cuda:0
+
+
+
+
+Cross 1
+LeNet(
+  (features): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(6, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU()
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(16, 32, kernel_size=(6, 6), stride=(1, 1))
+    (7): ReLU()
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (9): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+    (10): ReLU()
+    (11): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (12): Conv2d(64, 120, kernel_size=(4, 4), stride=(1, 1))
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): Linear(in_features=84, out_features=3, bias=True)
+    (2): Softmax(dim=-1)
+  )
+)
+[sklearn_metrics] Epoch:1 Lr:0.00010000 loss:116.4125 accuracy:0.5833 precision:0.5833 recall:0.5833 f1:0.5833
+[sklearn_metrics] Epoch:2 Lr:0.00010000 loss:95.4213 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:3 Lr:0.00010000 loss:93.2776 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:4 Lr:0.00010000 loss:93.0925 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:5 Lr:0.00010000 loss:92.8792 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:6 Lr:0.00010000 loss:92.7170 accuracy:0.6574 precision:0.6574 recall:0.6574 f1:0.6574
+[sklearn_metrics] Epoch:7 Lr:0.00010000 loss:92.1993 accuracy:0.6620 precision:0.6620 recall:0.6620 f1:0.6620
+[sklearn_metrics] Epoch:8 Lr:0.00010000 loss:91.1402 accuracy:0.6944 precision:0.6944 recall:0.6944 f1:0.6944
+[sklearn_metrics] Epoch:9 Lr:0.00010000 loss:89.6449 accuracy:0.6991 precision:0.6991 recall:0.6991 f1:0.6991
+[sklearn_metrics] Epoch:10 Lr:0.00010000 loss:87.3167 accuracy:0.7315 precision:0.7315 recall:0.7315 f1:0.7315
+[sklearn_metrics] Epoch:11 Lr:0.00010000 loss:83.0825 accuracy:0.7917 precision:0.7917 recall:0.7917 f1:0.7917
+[sklearn_metrics] Epoch:12 Lr:0.00010000 loss:75.9966 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:13 Lr:0.00010000 loss:74.1382 accuracy:0.8704 precision:0.8704 recall:0.8704 f1:0.8704
+[sklearn_metrics] Epoch:14 Lr:0.00010000 loss:75.4907 accuracy:0.8565 precision:0.8565 recall:0.8565 f1:0.8565
+[sklearn_metrics] Epoch:15 Lr:0.00010000 loss:71.1818 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:16 Lr:0.00010000 loss:70.7103 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:17 Lr:0.00010000 loss:71.0977 accuracy:0.8935 precision:0.8935 recall:0.8935 f1:0.8935
+[sklearn_metrics] Epoch:18 Lr:0.00010000 loss:71.3323 accuracy:0.8935 precision:0.8935 recall:0.8935 f1:0.8935
+[sklearn_metrics] Epoch:19 Lr:0.00010000 loss:71.5326 accuracy:0.8843 precision:0.8843 recall:0.8843 f1:0.8843
+[sklearn_metrics] Epoch:20 Lr:0.00010000 loss:70.0494 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:21 Lr:0.00010000 loss:69.7803 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:22 Lr:0.00010000 loss:69.7602 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:23 Lr:0.00010000 loss:70.0302 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:24 Lr:0.00010000 loss:70.1775 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:25 Lr:0.00010000 loss:69.7229 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:26 Lr:0.00010000 loss:70.1865 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:27 Lr:0.00010000 loss:69.2963 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:28 Lr:0.00010000 loss:69.6761 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:29 Lr:0.00010000 loss:70.0171 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:30 Lr:0.00010000 loss:70.3055 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:31 Lr:0.00010000 loss:68.8096 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:32 Lr:0.00010000 loss:71.5064 accuracy:0.8843 precision:0.8843 recall:0.8843 f1:0.8843
+[sklearn_metrics] Epoch:33 Lr:0.00001000 loss:69.6239 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:34 Lr:0.00001000 loss:69.1184 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:35 Lr:0.00001000 loss:69.6100 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:36 Lr:0.00001000 loss:69.6114 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:37 Lr:0.00001000 loss:69.6096 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:38 Lr:0.00001000 loss:70.1061 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:39 Lr:0.00001000 loss:69.6061 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:40 Lr:0.00001000 loss:69.6018 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:41 Lr:0.00001000 loss:69.5992 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:42 Lr:0.00001000 loss:69.5961 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:43 Lr:0.00001000 loss:69.5919 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:44 Lr:0.00001000 loss:69.5856 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:45 Lr:0.00001000 loss:69.5796 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:46 Lr:0.00001000 loss:69.5667 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:47 Lr:0.00001000 loss:69.5281 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:48 Lr:0.00001000 loss:69.4387 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:49 Lr:0.00001000 loss:68.7184 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:50 Lr:0.00001000 loss:68.0228 accuracy:0.9167 precision:0.9167 recall:0.9167 f1:0.9167
+[sklearn_metrics] Epoch:51 Lr:0.00001000 loss:67.6936 accuracy:0.9259 precision:0.9259 recall:0.9259 f1:0.9259
+[sklearn_metrics] Epoch:52 Lr:0.00001000 loss:67.3482 accuracy:0.9120 precision:0.9120 recall:0.9120 f1:0.9120
+[sklearn_metrics] Epoch:53 Lr:0.00001000 loss:66.6536 accuracy:0.9306 precision:0.9306 recall:0.9306 f1:0.9306
+[sklearn_metrics] Epoch:54 Lr:0.00001000 loss:66.5413 accuracy:0.9352 precision:0.9352 recall:0.9352 f1:0.9352
+[sklearn_metrics] Epoch:55 Lr:0.00001000 loss:66.3353 accuracy:0.9259 precision:0.9259 recall:0.9259 f1:0.9259
+[sklearn_metrics] Epoch:56 Lr:0.00001000 loss:66.0824 accuracy:0.9537 precision:0.9537 recall:0.9537 f1:0.9537
+[sklearn_metrics] Epoch:57 Lr:0.00001000 loss:65.8998 accuracy:0.9444 precision:0.9444 recall:0.9444 f1:0.9444
+[sklearn_metrics] Epoch:58 Lr:0.00001000 loss:65.7247 accuracy:0.9537 precision:0.9537 recall:0.9537 f1:0.9537
+[sklearn_metrics] Epoch:59 Lr:0.00001000 loss:65.6149 accuracy:0.9583 precision:0.9583 recall:0.9583 f1:0.9583
+[sklearn_metrics] Epoch:60 Lr:0.00001000 loss:64.9999 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:61 Lr:0.00001000 loss:64.8259 accuracy:0.9583 precision:0.9583 recall:0.9583 f1:0.9583
+[sklearn_metrics] Epoch:62 Lr:0.00001000 loss:64.8592 accuracy:0.9583 precision:0.9583 recall:0.9583 f1:0.9583
+[sklearn_metrics] Epoch:63 Lr:0.00001000 loss:64.4149 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:64 Lr:0.00001000 loss:64.3131 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:65 Lr:0.00001000 loss:64.0963 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:66 Lr:0.00000100 loss:63.9103 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:67 Lr:0.00000100 loss:63.8578 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:68 Lr:0.00000100 loss:63.8566 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:69 Lr:0.00000100 loss:63.8398 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:70 Lr:0.00000100 loss:63.8165 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:71 Lr:0.00000100 loss:63.7646 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:72 Lr:0.00000100 loss:63.7880 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:73 Lr:0.00000100 loss:63.7808 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:74 Lr:0.00000100 loss:63.7451 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:75 Lr:0.00000100 loss:63.6792 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:76 Lr:0.00000100 loss:63.7409 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:77 Lr:0.00000100 loss:63.7119 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:78 Lr:0.00000100 loss:63.6692 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:79 Lr:0.00000100 loss:63.6751 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:80 Lr:0.00000100 loss:63.7574 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:81 Lr:0.00000100 loss:63.6623 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:82 Lr:0.00000100 loss:63.5574 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:83 Lr:0.00000100 loss:63.6213 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:84 Lr:0.00000100 loss:63.6200 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:85 Lr:0.00000100 loss:63.5859 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:86 Lr:0.00000100 loss:63.5756 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:87 Lr:0.00000100 loss:63.5936 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:88 Lr:0.00000100 loss:63.4781 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:89 Lr:0.00000100 loss:63.5556 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:90 Lr:0.00000100 loss:63.5161 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:91 Lr:0.00000100 loss:63.5121 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:92 Lr:0.00000100 loss:63.4952 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:93 Lr:0.00000100 loss:63.4716 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:94 Lr:0.00000100 loss:63.4568 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:95 Lr:0.00000100 loss:63.4775 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:96 Lr:0.00000100 loss:63.5945 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:97 Lr:0.00000100 loss:63.4249 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:98 Lr:0.00000100 loss:63.4088 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:99 Lr:0.00000100 loss:63.3886 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:100 Lr:0.00000100 loss:63.3838 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00        12
+         1.0       1.00      1.00      1.00        10
+         2.0       1.00      1.00      1.00         9
+
+    accuracy                           1.00        31
+   macro avg       1.00      1.00      1.00        31
+weighted avg       1.00      1.00      1.00        31
+
+[[12  0  0]
+ [ 0 10  0]
+ [ 0  0  9]]
+[sklearn_metrics] accuracy:1.0000 precision:1.0000 recall:1.0000 f1:1.0000
+
+
+
+
+Cross 2
+LeNet(
+  (features): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(6, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU()
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(16, 32, kernel_size=(6, 6), stride=(1, 1))
+    (7): ReLU()
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (9): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+    (10): ReLU()
+    (11): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (12): Conv2d(64, 120, kernel_size=(4, 4), stride=(1, 1))
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): Linear(in_features=84, out_features=3, bias=True)
+    (2): Softmax(dim=-1)
+  )
+)
+[sklearn_metrics] Epoch:1 Lr:0.00010000 loss:118.4991 accuracy:0.3889 precision:0.3889 recall:0.3889 f1:0.3889
+[sklearn_metrics] Epoch:2 Lr:0.00010000 loss:104.3296 accuracy:0.6019 precision:0.6019 recall:0.6019 f1:0.6019
+[sklearn_metrics] Epoch:3 Lr:0.00010000 loss:94.6665 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:4 Lr:0.00010000 loss:95.0052 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:5 Lr:0.00010000 loss:94.4670 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:6 Lr:0.00010000 loss:94.2474 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:7 Lr:0.00010000 loss:94.1265 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:8 Lr:0.00010000 loss:94.8198 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:9 Lr:0.00010000 loss:94.1985 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:10 Lr:0.00010000 loss:94.5679 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:11 Lr:0.00010000 loss:94.0610 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:12 Lr:0.00010000 loss:92.9779 accuracy:0.6574 precision:0.6574 recall:0.6574 f1:0.6574
+[sklearn_metrics] Epoch:13 Lr:0.00010000 loss:92.8158 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:14 Lr:0.00010000 loss:92.0393 accuracy:0.6528 precision:0.6528 recall:0.6528 f1:0.6528
+[sklearn_metrics] Epoch:15 Lr:0.00010000 loss:89.9889 accuracy:0.6667 precision:0.6667 recall:0.6667 f1:0.6667
+[sklearn_metrics] Epoch:16 Lr:0.00010000 loss:81.2323 accuracy:0.8611 precision:0.8611 recall:0.8611 f1:0.8611
+[sklearn_metrics] Epoch:17 Lr:0.00010000 loss:68.0473 accuracy:0.9444 precision:0.9444 recall:0.9444 f1:0.9444
+[sklearn_metrics] Epoch:18 Lr:0.00010000 loss:66.0991 accuracy:0.9537 precision:0.9537 recall:0.9537 f1:0.9537
+[sklearn_metrics] Epoch:19 Lr:0.00010000 loss:63.3663 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:20 Lr:0.00010000 loss:62.4599 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:21 Lr:0.00010000 loss:62.1218 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:22 Lr:0.00010000 loss:61.6518 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:23 Lr:0.00010000 loss:61.1423 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:24 Lr:0.00010000 loss:61.6151 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:25 Lr:0.00010000 loss:61.2206 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:26 Lr:0.00010000 loss:60.9642 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:27 Lr:0.00010000 loss:60.7719 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:28 Lr:0.00010000 loss:60.7426 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:29 Lr:0.00010000 loss:61.3393 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:30 Lr:0.00010000 loss:61.6650 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:31 Lr:0.00010000 loss:60.7711 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:32 Lr:0.00010000 loss:60.6999 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:33 Lr:0.00001000 loss:60.7124 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:34 Lr:0.00001000 loss:60.6487 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:35 Lr:0.00001000 loss:60.6431 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:36 Lr:0.00001000 loss:60.6437 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:37 Lr:0.00001000 loss:60.6439 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:38 Lr:0.00001000 loss:60.6432 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:39 Lr:0.00001000 loss:60.6438 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:40 Lr:0.00001000 loss:60.6431 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:41 Lr:0.00001000 loss:60.6446 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:42 Lr:0.00001000 loss:60.6457 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:43 Lr:0.00001000 loss:60.6417 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:44 Lr:0.00001000 loss:60.6427 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:45 Lr:0.00001000 loss:60.6424 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:46 Lr:0.00001000 loss:60.6416 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:47 Lr:0.00001000 loss:60.6390 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:48 Lr:0.00001000 loss:60.6416 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:49 Lr:0.00001000 loss:60.6387 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:50 Lr:0.00001000 loss:60.6409 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:51 Lr:0.00001000 loss:60.6426 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:52 Lr:0.00001000 loss:60.6450 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:53 Lr:0.00001000 loss:60.6390 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:54 Lr:0.00001000 loss:60.6401 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:55 Lr:0.00001000 loss:60.6359 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:56 Lr:0.00001000 loss:60.6412 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:57 Lr:0.00001000 loss:60.6411 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:58 Lr:0.00001000 loss:60.6450 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:59 Lr:0.00001000 loss:60.6421 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:60 Lr:0.00001000 loss:60.6432 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:61 Lr:0.00001000 loss:60.6394 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:62 Lr:0.00001000 loss:60.6417 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:63 Lr:0.00001000 loss:60.6376 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:64 Lr:0.00001000 loss:60.6317 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:65 Lr:0.00001000 loss:60.6461 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:66 Lr:0.00000100 loss:60.6347 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:67 Lr:0.00000100 loss:60.6311 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:68 Lr:0.00000100 loss:60.6290 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:69 Lr:0.00000100 loss:60.6279 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:70 Lr:0.00000100 loss:60.6279 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:71 Lr:0.00000100 loss:60.6282 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:72 Lr:0.00000100 loss:60.6275 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:73 Lr:0.00000100 loss:60.6275 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:74 Lr:0.00000100 loss:60.6272 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:75 Lr:0.00000100 loss:60.6271 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:76 Lr:0.00000100 loss:60.1271 accuracy:0.9907 precision:0.9907 recall:0.9907 f1:0.9907
+[sklearn_metrics] Epoch:77 Lr:0.00000100 loss:60.6270 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:78 Lr:0.00000100 loss:60.6267 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:79 Lr:0.00000100 loss:60.6268 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:80 Lr:0.00000100 loss:60.6267 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:81 Lr:0.00000100 loss:60.6267 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:82 Lr:0.00000100 loss:60.6252 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:83 Lr:0.00000100 loss:60.6276 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:84 Lr:0.00000100 loss:60.6268 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:85 Lr:0.00000100 loss:60.6284 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:86 Lr:0.00000100 loss:60.6270 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:87 Lr:0.00000100 loss:60.6274 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:88 Lr:0.00000100 loss:60.6224 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:89 Lr:0.00000100 loss:60.6261 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:90 Lr:0.00000100 loss:60.6269 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:91 Lr:0.00000100 loss:60.6268 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:92 Lr:0.00000100 loss:60.6269 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:93 Lr:0.00000100 loss:60.6262 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:94 Lr:0.00000100 loss:60.6263 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:95 Lr:0.00000100 loss:60.6271 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:96 Lr:0.00000100 loss:60.6277 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:97 Lr:0.00000100 loss:60.6267 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:98 Lr:0.00000100 loss:60.6253 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:99 Lr:0.00000100 loss:60.6255 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:100 Lr:0.00000100 loss:60.6252 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00         7
+         1.0       1.00      1.00      1.00        12
+         2.0       1.00      1.00      1.00        12
+
+    accuracy                           1.00        31
+   macro avg       1.00      1.00      1.00        31
+weighted avg       1.00      1.00      1.00        31
+
+[[ 7  0  0]
+ [ 0 12  0]
+ [ 0  0 12]]
+[sklearn_metrics] accuracy:1.0000 precision:1.0000 recall:1.0000 f1:1.0000
+
+
+
+
+Cross 3
+LeNet(
+  (features): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(6, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU()
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(16, 32, kernel_size=(6, 6), stride=(1, 1))
+    (7): ReLU()
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (9): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+    (10): ReLU()
+    (11): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (12): Conv2d(64, 120, kernel_size=(4, 4), stride=(1, 1))
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): Linear(in_features=84, out_features=3, bias=True)
+    (2): Softmax(dim=-1)
+  )
+)
+[sklearn_metrics] Epoch:1 Lr:0.00010000 loss:118.4421 accuracy:0.3981 precision:0.3981 recall:0.3981 f1:0.3981
+[sklearn_metrics] Epoch:2 Lr:0.00010000 loss:102.3121 accuracy:0.6343 precision:0.6343 recall:0.6343 f1:0.6343
+[sklearn_metrics] Epoch:3 Lr:0.00010000 loss:94.7934 accuracy:0.6343 precision:0.6343 recall:0.6343 f1:0.6343
+[sklearn_metrics] Epoch:4 Lr:0.00010000 loss:94.5677 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:5 Lr:0.00010000 loss:94.0118 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:6 Lr:0.00010000 loss:92.2707 accuracy:0.6667 precision:0.6667 recall:0.6667 f1:0.6667
+[sklearn_metrics] Epoch:7 Lr:0.00010000 loss:87.0125 accuracy:0.7593 precision:0.7593 recall:0.7593 f1:0.7593
+[sklearn_metrics] Epoch:8 Lr:0.00010000 loss:82.0430 accuracy:0.8194 precision:0.8194 recall:0.8194 f1:0.8194
+[sklearn_metrics] Epoch:9 Lr:0.00010000 loss:76.0336 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:10 Lr:0.00010000 loss:73.0080 accuracy:0.8935 precision:0.8935 recall:0.8935 f1:0.8935
+[sklearn_metrics] Epoch:11 Lr:0.00010000 loss:72.2587 accuracy:0.8935 precision:0.8935 recall:0.8935 f1:0.8935
+[sklearn_metrics] Epoch:12 Lr:0.00010000 loss:72.3539 accuracy:0.8889 precision:0.8889 recall:0.8889 f1:0.8889
+[sklearn_metrics] Epoch:13 Lr:0.00010000 loss:71.1528 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:14 Lr:0.00010000 loss:70.9321 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:15 Lr:0.00010000 loss:71.3743 accuracy:0.8935 precision:0.8935 recall:0.8935 f1:0.8935
+[sklearn_metrics] Epoch:16 Lr:0.00010000 loss:72.4996 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:17 Lr:0.00010000 loss:71.0552 accuracy:0.8935 precision:0.8935 recall:0.8935 f1:0.8935
+[sklearn_metrics] Epoch:18 Lr:0.00010000 loss:70.8182 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:19 Lr:0.00010000 loss:70.6882 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:20 Lr:0.00010000 loss:70.6551 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:21 Lr:0.00010000 loss:71.2108 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:22 Lr:0.00010000 loss:70.6541 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:23 Lr:0.00010000 loss:70.8494 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:24 Lr:0.00010000 loss:70.6363 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:25 Lr:0.00010000 loss:70.6461 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:26 Lr:0.00010000 loss:70.6220 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:27 Lr:0.00010000 loss:70.6441 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:28 Lr:0.00010000 loss:70.6302 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:29 Lr:0.00010000 loss:70.7267 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:30 Lr:0.00010000 loss:72.9332 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:31 Lr:0.00010000 loss:70.6312 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:32 Lr:0.00010000 loss:70.8343 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:33 Lr:0.00001000 loss:70.0988 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:34 Lr:0.00001000 loss:70.5904 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:35 Lr:0.00001000 loss:70.5876 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:36 Lr:0.00001000 loss:70.5861 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:37 Lr:0.00001000 loss:70.5859 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:38 Lr:0.00001000 loss:70.0855 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:39 Lr:0.00001000 loss:70.5846 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:40 Lr:0.00001000 loss:70.5846 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:41 Lr:0.00001000 loss:70.5848 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:42 Lr:0.00001000 loss:70.5843 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:43 Lr:0.00001000 loss:70.5844 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:44 Lr:0.00001000 loss:70.5842 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:45 Lr:0.00001000 loss:70.0846 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:46 Lr:0.00001000 loss:70.5848 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:47 Lr:0.00001000 loss:70.5848 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:48 Lr:0.00001000 loss:70.5845 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:49 Lr:0.00001000 loss:70.5839 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:50 Lr:0.00001000 loss:70.5849 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:51 Lr:0.00001000 loss:70.5846 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:52 Lr:0.00001000 loss:70.5851 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:53 Lr:0.00001000 loss:70.5847 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:54 Lr:0.00001000 loss:70.5851 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:55 Lr:0.00001000 loss:70.5850 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:56 Lr:0.00001000 loss:70.5845 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:57 Lr:0.00001000 loss:70.5862 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:58 Lr:0.00001000 loss:70.0861 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:59 Lr:0.00001000 loss:70.5852 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:60 Lr:0.00001000 loss:70.0858 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:61 Lr:0.00001000 loss:70.5865 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:62 Lr:0.00001000 loss:70.5865 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:63 Lr:0.00001000 loss:70.0889 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:64 Lr:0.00001000 loss:70.5877 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:65 Lr:0.00001000 loss:70.5848 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:66 Lr:0.00000100 loss:70.5864 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:67 Lr:0.00000100 loss:70.5860 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:68 Lr:0.00000100 loss:70.5856 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:69 Lr:0.00000100 loss:70.5854 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:70 Lr:0.00000100 loss:70.5855 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:71 Lr:0.00000100 loss:70.5851 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:72 Lr:0.00000100 loss:70.5853 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:73 Lr:0.00000100 loss:70.5851 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:74 Lr:0.00000100 loss:70.5852 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:75 Lr:0.00000100 loss:70.5854 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:76 Lr:0.00000100 loss:70.5852 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:77 Lr:0.00000100 loss:70.5855 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:78 Lr:0.00000100 loss:70.5855 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:79 Lr:0.00000100 loss:70.5855 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:80 Lr:0.00000100 loss:70.5855 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:81 Lr:0.00000100 loss:70.5856 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:82 Lr:0.00000100 loss:70.5857 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:83 Lr:0.00000100 loss:70.5856 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:84 Lr:0.00000100 loss:70.5860 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:85 Lr:0.00000100 loss:70.5857 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:86 Lr:0.00000100 loss:70.5859 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:87 Lr:0.00000100 loss:70.5860 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:88 Lr:0.00000100 loss:70.5858 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:89 Lr:0.00000100 loss:70.5860 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:90 Lr:0.00000100 loss:70.0863 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:91 Lr:0.00000100 loss:70.5860 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:92 Lr:0.00000100 loss:70.5866 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:93 Lr:0.00000100 loss:70.5859 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:94 Lr:0.00000100 loss:70.5864 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:95 Lr:0.00000100 loss:70.5865 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:96 Lr:0.00000100 loss:70.5861 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:97 Lr:0.00000100 loss:70.5869 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:98 Lr:0.00000100 loss:70.5867 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:99 Lr:0.00000100 loss:70.5873 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:100 Lr:0.00000100 loss:70.5865 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.69      0.82        13
+         1.0       1.00      1.00      1.00         4
+         2.0       0.78      1.00      0.88        14
+
+    accuracy                           0.87        31
+   macro avg       0.93      0.90      0.90        31
+weighted avg       0.90      0.87      0.87        31
+
+[[ 9  0  4]
+ [ 0  4  0]
+ [ 0  0 14]]
+[sklearn_metrics] accuracy:0.8710 precision:0.8710 recall:0.8710 f1:0.8710
+
+
+
+
+Cross 4
+LeNet(
+  (features): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(6, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU()
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(16, 32, kernel_size=(6, 6), stride=(1, 1))
+    (7): ReLU()
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (9): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+    (10): ReLU()
+    (11): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (12): Conv2d(64, 120, kernel_size=(4, 4), stride=(1, 1))
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): Linear(in_features=84, out_features=3, bias=True)
+    (2): Softmax(dim=-1)
+  )
+)
+[sklearn_metrics] Epoch:1 Lr:0.00010000 loss:116.3386 accuracy:0.5324 precision:0.5324 recall:0.5324 f1:0.5324
+[sklearn_metrics] Epoch:2 Lr:0.00010000 loss:96.2832 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:3 Lr:0.00010000 loss:95.6849 accuracy:0.6343 precision:0.6343 recall:0.6343 f1:0.6343
+[sklearn_metrics] Epoch:4 Lr:0.00010000 loss:95.6337 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:5 Lr:0.00010000 loss:95.4561 accuracy:0.6343 precision:0.6343 recall:0.6343 f1:0.6343
+[sklearn_metrics] Epoch:6 Lr:0.00010000 loss:94.8938 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:7 Lr:0.00010000 loss:94.9904 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:8 Lr:0.00010000 loss:94.9793 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:9 Lr:0.00010000 loss:94.2479 accuracy:0.6528 precision:0.6528 recall:0.6528 f1:0.6528
+[sklearn_metrics] Epoch:10 Lr:0.00010000 loss:94.2209 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:11 Lr:0.00010000 loss:95.5409 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:12 Lr:0.00010000 loss:94.0071 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:13 Lr:0.00010000 loss:94.4007 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:14 Lr:0.00010000 loss:93.6003 accuracy:0.6528 precision:0.6528 recall:0.6528 f1:0.6528
+[sklearn_metrics] Epoch:15 Lr:0.00010000 loss:92.6961 accuracy:0.6667 precision:0.6667 recall:0.6667 f1:0.6667
+[sklearn_metrics] Epoch:16 Lr:0.00010000 loss:92.2474 accuracy:0.7130 precision:0.7130 recall:0.7130 f1:0.7130
+[sklearn_metrics] Epoch:17 Lr:0.00010000 loss:87.8138 accuracy:0.7546 precision:0.7546 recall:0.7546 f1:0.7546
+[sklearn_metrics] Epoch:18 Lr:0.00010000 loss:83.8544 accuracy:0.7824 precision:0.7824 recall:0.7824 f1:0.7824
+[sklearn_metrics] Epoch:19 Lr:0.00010000 loss:79.9263 accuracy:0.8380 precision:0.8380 recall:0.8380 f1:0.8380
+[sklearn_metrics] Epoch:20 Lr:0.00010000 loss:78.1522 accuracy:0.8380 precision:0.8380 recall:0.8380 f1:0.8380
+[sklearn_metrics] Epoch:21 Lr:0.00010000 loss:75.8298 accuracy:0.8426 precision:0.8426 recall:0.8426 f1:0.8426
+[sklearn_metrics] Epoch:22 Lr:0.00010000 loss:77.0630 accuracy:0.8333 precision:0.8333 recall:0.8333 f1:0.8333
+[sklearn_metrics] Epoch:23 Lr:0.00010000 loss:74.2974 accuracy:0.8704 precision:0.8704 recall:0.8704 f1:0.8704
+[sklearn_metrics] Epoch:24 Lr:0.00010000 loss:75.3168 accuracy:0.8565 precision:0.8565 recall:0.8565 f1:0.8565
+[sklearn_metrics] Epoch:25 Lr:0.00010000 loss:72.9249 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:26 Lr:0.00010000 loss:70.9825 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:27 Lr:0.00010000 loss:67.6344 accuracy:0.9352 precision:0.9352 recall:0.9352 f1:0.9352
+[sklearn_metrics] Epoch:28 Lr:0.00010000 loss:64.6872 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:29 Lr:0.00010000 loss:63.0902 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:30 Lr:0.00010000 loss:63.0390 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:31 Lr:0.00010000 loss:63.2577 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:32 Lr:0.00010000 loss:62.0029 accuracy:0.9815 precision:0.9815 recall:0.9815 f1:0.9815
+[sklearn_metrics] Epoch:33 Lr:0.00001000 loss:61.3234 accuracy:0.9815 precision:0.9815 recall:0.9815 f1:0.9815
+[sklearn_metrics] Epoch:34 Lr:0.00001000 loss:61.0382 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:35 Lr:0.00001000 loss:61.0103 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:36 Lr:0.00001000 loss:61.0287 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:37 Lr:0.00001000 loss:61.0132 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:38 Lr:0.00001000 loss:61.0003 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:39 Lr:0.00001000 loss:60.9740 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:40 Lr:0.00001000 loss:60.9723 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:41 Lr:0.00001000 loss:60.9791 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:42 Lr:0.00001000 loss:60.9520 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:43 Lr:0.00001000 loss:60.9598 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:44 Lr:0.00001000 loss:60.9483 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:45 Lr:0.00001000 loss:60.9175 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:46 Lr:0.00001000 loss:60.8942 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:47 Lr:0.00001000 loss:60.9099 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:48 Lr:0.00001000 loss:60.8985 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:49 Lr:0.00001000 loss:60.9308 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:50 Lr:0.00001000 loss:61.3834 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:51 Lr:0.00001000 loss:60.8668 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:52 Lr:0.00001000 loss:60.8756 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:53 Lr:0.00001000 loss:60.8446 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:54 Lr:0.00001000 loss:60.8625 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:55 Lr:0.00001000 loss:60.8606 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:56 Lr:0.00001000 loss:60.8364 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:57 Lr:0.00001000 loss:60.8499 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:58 Lr:0.00001000 loss:60.8090 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:59 Lr:0.00001000 loss:60.8075 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:60 Lr:0.00001000 loss:60.7968 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:61 Lr:0.00001000 loss:60.7787 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:62 Lr:0.00001000 loss:60.8740 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:63 Lr:0.00001000 loss:60.7798 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:64 Lr:0.00001000 loss:60.7905 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:65 Lr:0.00001000 loss:60.7751 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:66 Lr:0.00000100 loss:60.7611 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:67 Lr:0.00000100 loss:60.7604 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:68 Lr:0.00000100 loss:60.7533 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:69 Lr:0.00000100 loss:60.7618 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:70 Lr:0.00000100 loss:60.7555 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:71 Lr:0.00000100 loss:60.7528 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:72 Lr:0.00000100 loss:60.7502 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:73 Lr:0.00000100 loss:60.7510 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:74 Lr:0.00000100 loss:60.7476 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:75 Lr:0.00000100 loss:60.7495 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:76 Lr:0.00000100 loss:60.7476 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:77 Lr:0.00000100 loss:60.7493 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:78 Lr:0.00000100 loss:60.7557 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:79 Lr:0.00000100 loss:60.7456 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:80 Lr:0.00000100 loss:60.7458 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:81 Lr:0.00000100 loss:60.7461 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:82 Lr:0.00000100 loss:60.7457 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:83 Lr:0.00000100 loss:60.7455 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:84 Lr:0.00000100 loss:60.7440 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:85 Lr:0.00000100 loss:60.7434 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:86 Lr:0.00000100 loss:60.7433 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:87 Lr:0.00000100 loss:60.7419 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:88 Lr:0.00000100 loss:60.7481 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:89 Lr:0.00000100 loss:60.7409 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:90 Lr:0.00000100 loss:60.7411 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:91 Lr:0.00000100 loss:60.7403 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:92 Lr:0.00000100 loss:60.7375 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:93 Lr:0.00000100 loss:60.7399 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:94 Lr:0.00000100 loss:60.7424 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:95 Lr:0.00000100 loss:60.7373 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:96 Lr:0.00000100 loss:60.7373 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:97 Lr:0.00000100 loss:60.7356 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:98 Lr:0.00000100 loss:60.7354 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:99 Lr:0.00000100 loss:60.7356 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:100 Lr:0.00000100 loss:60.7368 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00         6
+         1.0       1.00      1.00      1.00        13
+         2.0       1.00      1.00      1.00        12
+
+    accuracy                           1.00        31
+   macro avg       1.00      1.00      1.00        31
+weighted avg       1.00      1.00      1.00        31
+
+[[ 6  0  0]
+ [ 0 13  0]
+ [ 0  0 12]]
+[sklearn_metrics] accuracy:1.0000 precision:1.0000 recall:1.0000 f1:1.0000
+
+
+
+
+Cross 5
+LeNet(
+  (features): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(6, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU()
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(16, 32, kernel_size=(6, 6), stride=(1, 1))
+    (7): ReLU()
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (9): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+    (10): ReLU()
+    (11): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (12): Conv2d(64, 120, kernel_size=(4, 4), stride=(1, 1))
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): Linear(in_features=84, out_features=3, bias=True)
+    (2): Softmax(dim=-1)
+  )
+)
+[sklearn_metrics] Epoch:1 Lr:0.00010000 loss:117.6514 accuracy:0.4259 precision:0.4259 recall:0.4259 f1:0.4259
+[sklearn_metrics] Epoch:2 Lr:0.00010000 loss:99.0191 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:3 Lr:0.00010000 loss:97.2013 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:4 Lr:0.00010000 loss:96.3001 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:5 Lr:0.00010000 loss:95.9989 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:6 Lr:0.00010000 loss:95.8462 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:7 Lr:0.00010000 loss:96.0302 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:8 Lr:0.00010000 loss:95.8161 accuracy:0.6343 precision:0.6343 recall:0.6343 f1:0.6343
+[sklearn_metrics] Epoch:9 Lr:0.00010000 loss:95.3572 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:10 Lr:0.00010000 loss:95.4146 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:11 Lr:0.00010000 loss:94.6656 accuracy:0.6343 precision:0.6343 recall:0.6343 f1:0.6343
+[sklearn_metrics] Epoch:12 Lr:0.00010000 loss:93.3568 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:13 Lr:0.00010000 loss:92.3389 accuracy:0.6574 precision:0.6574 recall:0.6574 f1:0.6574
+[sklearn_metrics] Epoch:14 Lr:0.00010000 loss:89.5151 accuracy:0.7269 precision:0.7269 recall:0.7269 f1:0.7269
+[sklearn_metrics] Epoch:15 Lr:0.00010000 loss:80.7836 accuracy:0.8241 precision:0.8241 recall:0.8241 f1:0.8241
+[sklearn_metrics] Epoch:16 Lr:0.00010000 loss:75.2325 accuracy:0.8657 precision:0.8657 recall:0.8657 f1:0.8657
+[sklearn_metrics] Epoch:17 Lr:0.00010000 loss:73.9960 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:18 Lr:0.00010000 loss:72.8928 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:19 Lr:0.00010000 loss:73.3012 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:20 Lr:0.00010000 loss:72.7483 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:21 Lr:0.00010000 loss:72.6941 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:22 Lr:0.00010000 loss:72.6831 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:23 Lr:0.00010000 loss:72.6490 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:24 Lr:0.00010000 loss:72.6328 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:25 Lr:0.00010000 loss:72.6354 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:26 Lr:0.00010000 loss:72.6136 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:27 Lr:0.00010000 loss:72.6141 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:28 Lr:0.00010000 loss:72.6258 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:29 Lr:0.00010000 loss:72.1077 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:30 Lr:0.00010000 loss:72.6086 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:31 Lr:0.00010000 loss:72.1110 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:32 Lr:0.00010000 loss:72.6003 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:33 Lr:0.00001000 loss:72.5942 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:34 Lr:0.00001000 loss:72.5918 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:35 Lr:0.00001000 loss:72.5915 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:36 Lr:0.00001000 loss:72.5918 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:37 Lr:0.00001000 loss:72.5918 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:38 Lr:0.00001000 loss:72.5918 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:39 Lr:0.00001000 loss:73.0911 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:40 Lr:0.00001000 loss:72.5922 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:41 Lr:0.00001000 loss:72.5912 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:42 Lr:0.00001000 loss:72.5916 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:43 Lr:0.00001000 loss:72.5912 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:44 Lr:0.00001000 loss:72.0914 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:45 Lr:0.00001000 loss:72.5927 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:46 Lr:0.00001000 loss:72.5914 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:47 Lr:0.00001000 loss:72.5914 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:48 Lr:0.00001000 loss:72.5942 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:49 Lr:0.00001000 loss:72.5926 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:50 Lr:0.00001000 loss:73.0904 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:51 Lr:0.00001000 loss:72.5912 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:52 Lr:0.00001000 loss:72.5933 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:53 Lr:0.00001000 loss:72.5911 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:54 Lr:0.00001000 loss:72.5910 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:55 Lr:0.00001000 loss:72.5908 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:56 Lr:0.00001000 loss:72.5919 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:57 Lr:0.00001000 loss:73.0899 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:58 Lr:0.00001000 loss:73.0916 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:59 Lr:0.00001000 loss:72.0913 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:60 Lr:0.00001000 loss:72.5896 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:61 Lr:0.00001000 loss:72.5900 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:62 Lr:0.00001000 loss:73.0920 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:63 Lr:0.00001000 loss:72.5905 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:64 Lr:0.00001000 loss:72.5892 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:65 Lr:0.00001000 loss:72.5898 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:66 Lr:0.00000100 loss:72.5891 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:67 Lr:0.00000100 loss:72.5881 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:68 Lr:0.00000100 loss:72.5876 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:69 Lr:0.00000100 loss:72.5876 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:70 Lr:0.00000100 loss:72.5874 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:71 Lr:0.00000100 loss:72.5876 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:72 Lr:0.00000100 loss:72.5880 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:73 Lr:0.00000100 loss:72.5875 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:74 Lr:0.00000100 loss:72.5876 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:75 Lr:0.00000100 loss:72.0876 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:76 Lr:0.00000100 loss:73.0876 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:77 Lr:0.00000100 loss:72.5876 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:78 Lr:0.00000100 loss:72.5875 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:79 Lr:0.00000100 loss:72.0876 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:80 Lr:0.00000100 loss:72.5876 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:81 Lr:0.00000100 loss:72.5879 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:82 Lr:0.00000100 loss:72.0877 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:83 Lr:0.00000100 loss:73.0876 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:84 Lr:0.00000100 loss:72.5876 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:85 Lr:0.00000100 loss:72.5857 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:86 Lr:0.00000100 loss:72.5875 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:87 Lr:0.00000100 loss:72.5872 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:88 Lr:0.00000100 loss:72.5873 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:89 Lr:0.00000100 loss:72.5873 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:90 Lr:0.00000100 loss:72.5872 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:91 Lr:0.00000100 loss:72.5873 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:92 Lr:0.00000100 loss:72.5869 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:93 Lr:0.00000100 loss:72.0876 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:94 Lr:0.00000100 loss:73.0871 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:95 Lr:0.00000100 loss:72.0875 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:96 Lr:0.00000100 loss:72.5874 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:97 Lr:0.00000100 loss:72.5870 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:98 Lr:0.00000100 loss:72.5871 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:99 Lr:0.00000100 loss:72.5868 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:100 Lr:0.00000100 loss:72.5867 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+              precision    recall  f1-score   support
+
+         0.0       0.86      0.55      0.67        11
+         1.0       0.90      0.90      0.90        10
+         2.0       0.64      0.90      0.75        10
+
+    accuracy                           0.77        31
+   macro avg       0.80      0.78      0.77        31
+weighted avg       0.80      0.77      0.77        31
+
+[[6 0 5]
+ [1 9 0]
+ [0 1 9]]
+[sklearn_metrics] accuracy:0.7742 precision:0.7742 recall:0.7742 f1:0.7742
+
+
+
+
+Cross 6
+LeNet(
+  (features): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(6, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU()
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(16, 32, kernel_size=(6, 6), stride=(1, 1))
+    (7): ReLU()
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (9): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+    (10): ReLU()
+    (11): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (12): Conv2d(64, 120, kernel_size=(4, 4), stride=(1, 1))
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): Linear(in_features=84, out_features=3, bias=True)
+    (2): Softmax(dim=-1)
+  )
+)
+[sklearn_metrics] Epoch:1 Lr:0.00010000 loss:117.9053 accuracy:0.3704 precision:0.3704 recall:0.3704 f1:0.3704
+[sklearn_metrics] Epoch:2 Lr:0.00010000 loss:97.9372 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:3 Lr:0.00010000 loss:94.6745 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:4 Lr:0.00010000 loss:94.0281 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:5 Lr:0.00010000 loss:93.1855 accuracy:0.6528 precision:0.6528 recall:0.6528 f1:0.6528
+[sklearn_metrics] Epoch:6 Lr:0.00010000 loss:93.1843 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:7 Lr:0.00010000 loss:93.7459 accuracy:0.6435 precision:0.6435 recall:0.6435 f1:0.6435
+[sklearn_metrics] Epoch:8 Lr:0.00010000 loss:93.4512 accuracy:0.6528 precision:0.6528 recall:0.6528 f1:0.6528
+[sklearn_metrics] Epoch:9 Lr:0.00010000 loss:93.0559 accuracy:0.6481 precision:0.6481 recall:0.6481 f1:0.6481
+[sklearn_metrics] Epoch:10 Lr:0.00010000 loss:92.9036 accuracy:0.6528 precision:0.6528 recall:0.6528 f1:0.6528
+[sklearn_metrics] Epoch:11 Lr:0.00010000 loss:91.8037 accuracy:0.6667 precision:0.6667 recall:0.6667 f1:0.6667
+[sklearn_metrics] Epoch:12 Lr:0.00010000 loss:91.1025 accuracy:0.6620 precision:0.6620 recall:0.6620 f1:0.6620
+[sklearn_metrics] Epoch:13 Lr:0.00010000 loss:89.5251 accuracy:0.7176 precision:0.7176 recall:0.7176 f1:0.7176
+[sklearn_metrics] Epoch:14 Lr:0.00010000 loss:83.7517 accuracy:0.7917 precision:0.7917 recall:0.7917 f1:0.7917
+[sklearn_metrics] Epoch:15 Lr:0.00010000 loss:77.1167 accuracy:0.8611 precision:0.8611 recall:0.8611 f1:0.8611
+[sklearn_metrics] Epoch:16 Lr:0.00010000 loss:74.5303 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:17 Lr:0.00010000 loss:72.0469 accuracy:0.8935 precision:0.8935 recall:0.8935 f1:0.8935
+[sklearn_metrics] Epoch:18 Lr:0.00010000 loss:71.0019 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:19 Lr:0.00010000 loss:71.3382 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:20 Lr:0.00010000 loss:70.5221 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:21 Lr:0.00010000 loss:70.0893 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:22 Lr:0.00010000 loss:69.5872 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:23 Lr:0.00010000 loss:70.0697 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:24 Lr:0.00010000 loss:69.9689 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:25 Lr:0.00010000 loss:70.1671 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:26 Lr:0.00010000 loss:69.5223 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:27 Lr:0.00010000 loss:69.7626 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:28 Lr:0.00010000 loss:69.8566 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:29 Lr:0.00010000 loss:70.0887 accuracy:0.8935 precision:0.8935 recall:0.8935 f1:0.8935
+[sklearn_metrics] Epoch:30 Lr:0.00010000 loss:69.8986 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:31 Lr:0.00010000 loss:69.3301 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:32 Lr:0.00010000 loss:68.4248 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:33 Lr:0.00001000 loss:65.7747 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:34 Lr:0.00001000 loss:65.4809 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:35 Lr:0.00001000 loss:65.3963 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:36 Lr:0.00001000 loss:64.7764 accuracy:0.9815 precision:0.9815 recall:0.9815 f1:0.9815
+[sklearn_metrics] Epoch:37 Lr:0.00001000 loss:64.5237 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:38 Lr:0.00001000 loss:64.1500 accuracy:0.9815 precision:0.9815 recall:0.9815 f1:0.9815
+[sklearn_metrics] Epoch:39 Lr:0.00001000 loss:63.9075 accuracy:0.9815 precision:0.9815 recall:0.9815 f1:0.9815
+[sklearn_metrics] Epoch:40 Lr:0.00001000 loss:63.7697 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:41 Lr:0.00001000 loss:63.5601 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:42 Lr:0.00001000 loss:63.2856 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:43 Lr:0.00001000 loss:63.0292 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:44 Lr:0.00001000 loss:62.8138 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:45 Lr:0.00001000 loss:62.7579 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:46 Lr:0.00001000 loss:62.4845 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:47 Lr:0.00001000 loss:62.3670 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:48 Lr:0.00001000 loss:62.3971 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:49 Lr:0.00001000 loss:62.1237 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:50 Lr:0.00001000 loss:61.9315 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:51 Lr:0.00001000 loss:61.9201 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:52 Lr:0.00001000 loss:61.7256 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:53 Lr:0.00001000 loss:61.7642 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:54 Lr:0.00001000 loss:61.5149 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:55 Lr:0.00001000 loss:61.5273 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:56 Lr:0.00001000 loss:61.4413 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:57 Lr:0.00001000 loss:61.3370 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:58 Lr:0.00001000 loss:61.3545 accuracy:0.9907 precision:0.9907 recall:0.9907 f1:0.9907
+[sklearn_metrics] Epoch:59 Lr:0.00001000 loss:61.3227 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:60 Lr:0.00001000 loss:61.3164 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:61 Lr:0.00001000 loss:61.1221 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:62 Lr:0.00001000 loss:61.1218 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:63 Lr:0.00001000 loss:61.0532 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:64 Lr:0.00001000 loss:61.0832 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:65 Lr:0.00001000 loss:60.9934 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:66 Lr:0.00000100 loss:60.9182 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:67 Lr:0.00000100 loss:60.8828 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:68 Lr:0.00000100 loss:60.8961 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:69 Lr:0.00000100 loss:60.8902 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:70 Lr:0.00000100 loss:60.8863 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:71 Lr:0.00000100 loss:60.8819 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:72 Lr:0.00000100 loss:60.8794 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:73 Lr:0.00000100 loss:60.8749 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:74 Lr:0.00000100 loss:60.8899 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:75 Lr:0.00000100 loss:60.8622 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:76 Lr:0.00000100 loss:60.8714 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:77 Lr:0.00000100 loss:60.8438 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:78 Lr:0.00000100 loss:60.8619 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:79 Lr:0.00000100 loss:60.8466 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:80 Lr:0.00000100 loss:60.8354 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:81 Lr:0.00000100 loss:61.0413 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:82 Lr:0.00000100 loss:60.8449 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:83 Lr:0.00000100 loss:60.8370 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:84 Lr:0.00000100 loss:60.8332 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:85 Lr:0.00000100 loss:60.8339 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:86 Lr:0.00000100 loss:60.8184 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:87 Lr:0.00000100 loss:60.8105 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:88 Lr:0.00000100 loss:60.8055 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:89 Lr:0.00000100 loss:60.8132 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:90 Lr:0.00000100 loss:60.8049 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:91 Lr:0.00000100 loss:60.8035 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:92 Lr:0.00000100 loss:60.7986 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:93 Lr:0.00000100 loss:60.7898 accuracy:0.9907 precision:0.9907 recall:0.9907 f1:0.9907
+[sklearn_metrics] Epoch:94 Lr:0.00000100 loss:60.7905 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:95 Lr:0.00000100 loss:60.7899 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:96 Lr:0.00000100 loss:60.7901 accuracy:0.9907 precision:0.9907 recall:0.9907 f1:0.9907
+[sklearn_metrics] Epoch:97 Lr:0.00000100 loss:60.7779 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:98 Lr:0.00000100 loss:60.7701 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:99 Lr:0.00000100 loss:60.7726 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:100 Lr:0.00000100 loss:60.7729 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00        12
+         1.0       1.00      1.00      1.00        14
+         2.0       1.00      1.00      1.00         5
+
+    accuracy                           1.00        31
+   macro avg       1.00      1.00      1.00        31
+weighted avg       1.00      1.00      1.00        31
+
+[[12  0  0]
+ [ 0 14  0]
+ [ 0  0  5]]
+[sklearn_metrics] accuracy:1.0000 precision:1.0000 recall:1.0000 f1:1.0000
+
+
+
+
+Cross 7
+LeNet(
+  (features): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(6, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU()
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(16, 32, kernel_size=(6, 6), stride=(1, 1))
+    (7): ReLU()
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (9): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+    (10): ReLU()
+    (11): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (12): Conv2d(64, 120, kernel_size=(4, 4), stride=(1, 1))
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): Linear(in_features=84, out_features=3, bias=True)
+    (2): Softmax(dim=-1)
+  )
+)
+[sklearn_metrics] Epoch:1 Lr:0.00010000 loss:117.4313 accuracy:0.4722 precision:0.4722 recall:0.4722 f1:0.4722
+[sklearn_metrics] Epoch:2 Lr:0.00010000 loss:95.4162 accuracy:0.6574 precision:0.6574 recall:0.6574 f1:0.6574
+[sklearn_metrics] Epoch:3 Lr:0.00010000 loss:93.2836 accuracy:0.6620 precision:0.6620 recall:0.6620 f1:0.6620
+[sklearn_metrics] Epoch:4 Lr:0.00010000 loss:93.1064 accuracy:0.6574 precision:0.6574 recall:0.6574 f1:0.6574
+[sklearn_metrics] Epoch:5 Lr:0.00010000 loss:92.5611 accuracy:0.6574 precision:0.6574 recall:0.6574 f1:0.6574
+[sklearn_metrics] Epoch:6 Lr:0.00010000 loss:92.7291 accuracy:0.6620 precision:0.6620 recall:0.6620 f1:0.6620
+[sklearn_metrics] Epoch:7 Lr:0.00010000 loss:92.4156 accuracy:0.6667 precision:0.6667 recall:0.6667 f1:0.6667
+[sklearn_metrics] Epoch:8 Lr:0.00010000 loss:92.8441 accuracy:0.6759 precision:0.6759 recall:0.6759 f1:0.6759
+[sklearn_metrics] Epoch:9 Lr:0.00010000 loss:92.4038 accuracy:0.6620 precision:0.6620 recall:0.6620 f1:0.6620
+[sklearn_metrics] Epoch:10 Lr:0.00010000 loss:91.9699 accuracy:0.6713 precision:0.6713 recall:0.6713 f1:0.6713
+[sklearn_metrics] Epoch:11 Lr:0.00010000 loss:91.7578 accuracy:0.6852 precision:0.6852 recall:0.6852 f1:0.6852
+[sklearn_metrics] Epoch:12 Lr:0.00010000 loss:89.4369 accuracy:0.7269 precision:0.7269 recall:0.7269 f1:0.7269
+[sklearn_metrics] Epoch:13 Lr:0.00010000 loss:92.6696 accuracy:0.6759 precision:0.6759 recall:0.6759 f1:0.6759
+[sklearn_metrics] Epoch:14 Lr:0.00010000 loss:89.0134 accuracy:0.7130 precision:0.7130 recall:0.7130 f1:0.7130
+[sklearn_metrics] Epoch:15 Lr:0.00010000 loss:88.0410 accuracy:0.7546 precision:0.7546 recall:0.7546 f1:0.7546
+[sklearn_metrics] Epoch:16 Lr:0.00010000 loss:79.9408 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:17 Lr:0.00010000 loss:75.0948 accuracy:0.8750 precision:0.8750 recall:0.8750 f1:0.8750
+[sklearn_metrics] Epoch:18 Lr:0.00010000 loss:85.6023 accuracy:0.7639 precision:0.7639 recall:0.7639 f1:0.7639
+[sklearn_metrics] Epoch:19 Lr:0.00010000 loss:71.0634 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:20 Lr:0.00010000 loss:70.1644 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:21 Lr:0.00010000 loss:70.5335 accuracy:0.8981 precision:0.8981 recall:0.8981 f1:0.8981
+[sklearn_metrics] Epoch:22 Lr:0.00010000 loss:71.4342 accuracy:0.8935 precision:0.8935 recall:0.8935 f1:0.8935
+[sklearn_metrics] Epoch:23 Lr:0.00010000 loss:69.7381 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:24 Lr:0.00010000 loss:69.1773 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:25 Lr:0.00010000 loss:69.6489 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:26 Lr:0.00010000 loss:69.6419 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:27 Lr:0.00010000 loss:69.6249 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:28 Lr:0.00010000 loss:69.6214 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:29 Lr:0.00010000 loss:69.6230 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:30 Lr:0.00010000 loss:69.6295 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:31 Lr:0.00010000 loss:69.6092 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:32 Lr:0.00010000 loss:69.6100 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:33 Lr:0.00001000 loss:69.5949 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:34 Lr:0.00001000 loss:69.5939 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:35 Lr:0.00001000 loss:69.5934 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:36 Lr:0.00001000 loss:69.5933 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:37 Lr:0.00001000 loss:69.5931 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:38 Lr:0.00001000 loss:69.5928 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:39 Lr:0.00001000 loss:70.0925 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:40 Lr:0.00001000 loss:69.5931 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:41 Lr:0.00001000 loss:69.5922 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:42 Lr:0.00001000 loss:69.5915 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:43 Lr:0.00001000 loss:69.5865 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:44 Lr:0.00001000 loss:69.5911 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:45 Lr:0.00001000 loss:69.5910 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:46 Lr:0.00001000 loss:69.5921 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:47 Lr:0.00001000 loss:69.5908 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:48 Lr:0.00001000 loss:69.5907 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:49 Lr:0.00001000 loss:69.5907 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:50 Lr:0.00001000 loss:69.5906 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:51 Lr:0.00001000 loss:69.5898 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:52 Lr:0.00001000 loss:69.5901 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:53 Lr:0.00001000 loss:69.5900 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:54 Lr:0.00001000 loss:69.5847 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:55 Lr:0.00001000 loss:69.5896 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:56 Lr:0.00001000 loss:69.0899 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:57 Lr:0.00001000 loss:69.5888 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:58 Lr:0.00001000 loss:69.5872 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:59 Lr:0.00001000 loss:69.5888 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:60 Lr:0.00001000 loss:69.5891 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:61 Lr:0.00001000 loss:69.5880 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:62 Lr:0.00001000 loss:69.5873 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:63 Lr:0.00001000 loss:69.0922 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:64 Lr:0.00001000 loss:69.5881 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:65 Lr:0.00001000 loss:70.0883 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:66 Lr:0.00000100 loss:69.5864 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:67 Lr:0.00000100 loss:69.5861 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:68 Lr:0.00000100 loss:69.5857 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:69 Lr:0.00000100 loss:69.5856 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:70 Lr:0.00000100 loss:69.5856 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:71 Lr:0.00000100 loss:69.5855 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:72 Lr:0.00000100 loss:69.5854 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:73 Lr:0.00000100 loss:69.5856 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:74 Lr:0.00000100 loss:69.5855 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:75 Lr:0.00000100 loss:69.5844 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:76 Lr:0.00000100 loss:69.5864 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:77 Lr:0.00000100 loss:69.5855 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:78 Lr:0.00000100 loss:69.0857 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:79 Lr:0.00000100 loss:69.5858 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:80 Lr:0.00000100 loss:69.5855 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:81 Lr:0.00000100 loss:69.5855 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:82 Lr:0.00000100 loss:69.5867 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:83 Lr:0.00000100 loss:69.5859 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:84 Lr:0.00000100 loss:69.0854 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:85 Lr:0.00000100 loss:69.5854 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:86 Lr:0.00000100 loss:69.5855 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:87 Lr:0.00000100 loss:70.0854 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:88 Lr:0.00000100 loss:69.5854 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:89 Lr:0.00000100 loss:69.0856 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:90 Lr:0.00000100 loss:69.5853 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:91 Lr:0.00000100 loss:69.5851 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:92 Lr:0.00000100 loss:69.5850 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:93 Lr:0.00000100 loss:69.5855 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:94 Lr:0.00000100 loss:69.0852 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:95 Lr:0.00000100 loss:69.0854 accuracy:0.9074 precision:0.9074 recall:0.9074 f1:0.9074
+[sklearn_metrics] Epoch:96 Lr:0.00000100 loss:69.5854 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:97 Lr:0.00000100 loss:69.5854 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:98 Lr:0.00000100 loss:69.5851 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:99 Lr:0.00000100 loss:69.5854 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+[sklearn_metrics] Epoch:100 Lr:0.00000100 loss:69.5851 accuracy:0.9028 precision:0.9028 recall:0.9028 f1:0.9028
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.86      0.92        14
+         1.0       0.89      1.00      0.94         8
+         2.0       0.80      0.89      0.84         9
+
+    accuracy                           0.90        31
+   macro avg       0.90      0.92      0.90        31
+weighted avg       0.91      0.90      0.90        31
+
+[[12  0  2]
+ [ 0  8  0]
+ [ 0  1  8]]
+[sklearn_metrics] accuracy:0.9032 precision:0.9032 recall:0.9032 f1:0.9032
+
+
+
+
+Cross 8
+LeNet(
+  (features): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(6, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU()
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(16, 32, kernel_size=(6, 6), stride=(1, 1))
+    (7): ReLU()
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (9): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+    (10): ReLU()
+    (11): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (12): Conv2d(64, 120, kernel_size=(4, 4), stride=(1, 1))
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): Linear(in_features=84, out_features=3, bias=True)
+    (2): Softmax(dim=-1)
+  )
+)
+[sklearn_metrics] Epoch:1 Lr:0.00010000 loss:117.4327 accuracy:0.5972 precision:0.5972 recall:0.5972 f1:0.5972
+[sklearn_metrics] Epoch:2 Lr:0.00010000 loss:98.2584 accuracy:0.6250 precision:0.6250 recall:0.6250 f1:0.6250
+[sklearn_metrics] Epoch:3 Lr:0.00010000 loss:96.8435 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:4 Lr:0.00010000 loss:95.6861 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:5 Lr:0.00010000 loss:95.3244 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:6 Lr:0.00010000 loss:94.7859 accuracy:0.6296 precision:0.6296 recall:0.6296 f1:0.6296
+[sklearn_metrics] Epoch:7 Lr:0.00010000 loss:95.5595 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:8 Lr:0.00010000 loss:95.1649 accuracy:0.6343 precision:0.6343 recall:0.6343 f1:0.6343
+[sklearn_metrics] Epoch:9 Lr:0.00010000 loss:94.2649 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:10 Lr:0.00010000 loss:94.1355 accuracy:0.6389 precision:0.6389 recall:0.6389 f1:0.6389
+[sklearn_metrics] Epoch:11 Lr:0.00010000 loss:93.3528 accuracy:0.6620 precision:0.6620 recall:0.6620 f1:0.6620
+[sklearn_metrics] Epoch:12 Lr:0.00010000 loss:90.2930 accuracy:0.6991 precision:0.6991 recall:0.6991 f1:0.6991
+[sklearn_metrics] Epoch:13 Lr:0.00010000 loss:84.0031 accuracy:0.8102 precision:0.8102 recall:0.8102 f1:0.8102
+[sklearn_metrics] Epoch:14 Lr:0.00010000 loss:74.9127 accuracy:0.8796 precision:0.8796 recall:0.8796 f1:0.8796
+[sklearn_metrics] Epoch:15 Lr:0.00010000 loss:70.6310 accuracy:0.9120 precision:0.9120 recall:0.9120 f1:0.9120
+[sklearn_metrics] Epoch:16 Lr:0.00010000 loss:67.3811 accuracy:0.9444 precision:0.9444 recall:0.9444 f1:0.9444
+[sklearn_metrics] Epoch:17 Lr:0.00010000 loss:65.2067 accuracy:0.9583 precision:0.9583 recall:0.9583 f1:0.9583
+[sklearn_metrics] Epoch:18 Lr:0.00010000 loss:63.5949 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:19 Lr:0.00010000 loss:63.5161 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:20 Lr:0.00010000 loss:63.4509 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:21 Lr:0.00010000 loss:62.8230 accuracy:0.9769 precision:0.9769 recall:0.9769 f1:0.9769
+[sklearn_metrics] Epoch:22 Lr:0.00010000 loss:61.9429 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:23 Lr:0.00010000 loss:61.3030 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:24 Lr:0.00010000 loss:62.3368 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:25 Lr:0.00010000 loss:60.9990 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:26 Lr:0.00010000 loss:62.3525 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:27 Lr:0.00010000 loss:60.9806 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:28 Lr:0.00010000 loss:60.9467 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:29 Lr:0.00010000 loss:61.2043 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:30 Lr:0.00010000 loss:60.8659 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:31 Lr:0.00010000 loss:60.9068 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:32 Lr:0.00010000 loss:62.5779 accuracy:0.9676 precision:0.9676 recall:0.9676 f1:0.9676
+[sklearn_metrics] Epoch:33 Lr:0.00001000 loss:62.2555 accuracy:0.9722 precision:0.9722 recall:0.9722 f1:0.9722
+[sklearn_metrics] Epoch:34 Lr:0.00001000 loss:60.9310 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:35 Lr:0.00001000 loss:60.7434 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:36 Lr:0.00001000 loss:60.7271 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:37 Lr:0.00001000 loss:60.7249 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:38 Lr:0.00001000 loss:60.7222 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:39 Lr:0.00001000 loss:60.2197 accuracy:0.9907 precision:0.9907 recall:0.9907 f1:0.9907
+[sklearn_metrics] Epoch:40 Lr:0.00001000 loss:60.7128 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:41 Lr:0.00001000 loss:60.7127 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:42 Lr:0.00001000 loss:60.7119 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:43 Lr:0.00001000 loss:60.7093 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:44 Lr:0.00001000 loss:60.7067 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:45 Lr:0.00001000 loss:60.7062 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:46 Lr:0.00001000 loss:60.7050 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:47 Lr:0.00001000 loss:60.7070 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:48 Lr:0.00001000 loss:60.7017 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:49 Lr:0.00001000 loss:60.7012 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:50 Lr:0.00001000 loss:60.6908 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:51 Lr:0.00001000 loss:60.6984 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:52 Lr:0.00001000 loss:60.6990 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:53 Lr:0.00001000 loss:60.6985 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:54 Lr:0.00001000 loss:60.6936 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:55 Lr:0.00001000 loss:60.6876 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:56 Lr:0.00001000 loss:60.6949 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:57 Lr:0.00001000 loss:60.6897 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:58 Lr:0.00001000 loss:60.6940 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:59 Lr:0.00001000 loss:60.6923 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:60 Lr:0.00001000 loss:60.6842 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:61 Lr:0.00001000 loss:60.6898 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:62 Lr:0.00001000 loss:60.6804 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:63 Lr:0.00001000 loss:60.6804 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:64 Lr:0.00001000 loss:60.6766 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:65 Lr:0.00001000 loss:60.1755 accuracy:0.9907 precision:0.9907 recall:0.9907 f1:0.9907
+[sklearn_metrics] Epoch:66 Lr:0.00000100 loss:60.6698 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:67 Lr:0.00000100 loss:60.6671 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:68 Lr:0.00000100 loss:60.6677 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:69 Lr:0.00000100 loss:60.6672 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:70 Lr:0.00000100 loss:60.6648 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:71 Lr:0.00000100 loss:60.6661 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:72 Lr:0.00000100 loss:60.6659 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:73 Lr:0.00000100 loss:60.6673 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:74 Lr:0.00000100 loss:60.6669 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:75 Lr:0.00000100 loss:60.6668 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:76 Lr:0.00000100 loss:60.6657 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:77 Lr:0.00000100 loss:60.6653 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:78 Lr:0.00000100 loss:60.6654 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:79 Lr:0.00000100 loss:60.6648 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:80 Lr:0.00000100 loss:60.6698 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:81 Lr:0.00000100 loss:60.6643 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:82 Lr:0.00000100 loss:60.6653 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:83 Lr:0.00000100 loss:60.6657 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:84 Lr:0.00000100 loss:60.6645 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:85 Lr:0.00000100 loss:60.6644 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:86 Lr:0.00000100 loss:60.6643 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:87 Lr:0.00000100 loss:60.6739 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:88 Lr:0.00000100 loss:60.6645 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:89 Lr:0.00000100 loss:60.6638 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:90 Lr:0.00000100 loss:60.6639 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:91 Lr:0.00000100 loss:60.6613 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:92 Lr:0.00000100 loss:60.6633 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:93 Lr:0.00000100 loss:60.6633 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:94 Lr:0.00000100 loss:60.6585 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:95 Lr:0.00000100 loss:60.6622 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:96 Lr:0.00000100 loss:60.6616 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:97 Lr:0.00000100 loss:60.6616 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:98 Lr:0.00000100 loss:60.6615 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:99 Lr:0.00000100 loss:60.6623 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+[sklearn_metrics] Epoch:100 Lr:0.00000100 loss:60.6622 accuracy:0.9861 precision:0.9861 recall:0.9861 f1:0.9861
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00        11
+         1.0       1.00      1.00      1.00        10
+         2.0       1.00      1.00      1.00        10
+
+    accuracy                           1.00        31
+   macro avg       1.00      1.00      1.00        31
+weighted avg       1.00      1.00      1.00        31
+
+[[11  0  0]
+ [ 0 10  0]
+ [ 0  0 10]]
+[sklearn_metrics] accuracy:1.0000 precision:1.0000 recall:1.0000 f1:1.0000
