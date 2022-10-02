@@ -4,15 +4,46 @@
 # @Time  : 2022/5/11  18:55
 import os
 import random
+from typing import List, Any
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report, \
+    confusion_matrix
+import matplotlib.pyplot as plt
 import numpy as np
 import torch
 from torch.cuda.amp import GradScaler, autocast
+import warnings
 from tqdm import tqdm
 
+warnings.filterwarnings("ignore")
 
-def train_one_epoch(model, device, train_loader, criterion, optimizer, idx, verbose=False, mixed=False):
+
+def get_confusion_matrix(trues, preds):
+    labels = [0, 1, 2]
+    conf_matrix = confusion_matrix(trues, preds, labels)
+    return conf_matrix
+
+
+def plot_confusion_matrix(conf_matrix):
+    plt.figure(dpi=500)
+    plt.imshow(conf_matrix, cmap=plt.cm.Greens)
+    indices = range(conf_matrix.shape[0])
+    labels = [0, 1, 2]
+    plt.xticks(indices, labels)
+    plt.yticks(indices, labels)
+    plt.colorbar()
+    plt.xlabel('y_pred')
+    plt.ylabel('y_true')
+    # 显示数据
+    for first_index in range(conf_matrix.shape[0]):
+        for second_index in range(conf_matrix.shape[1]):
+            plt.text(first_index, second_index, conf_matrix[first_index, second_index])
+    plt.savefig('heatmap_confusion_matrix.png')
+    # plt.show()
+
+
+def train_one_epoch(model, device, train_loader, criterion, optimizer, idx, verbose=True, mixed=False):
     """
-    在dataloader上完成一轮完整的迭代
+    在train_data_batchloader上完成一轮完整的迭代
     :param model: 网络模型
     :param device: cuda或cpu
     :param train_loader: 训练数据loader
@@ -23,41 +54,55 @@ def train_one_epoch(model, device, train_loader, criterion, optimizer, idx, verb
     :return: training loss
     """
     model.train()
-    print('\nEpoch {} starts, please wait...'.format(idx))
 
     # tqdm用于显示进度条
-    loader = tqdm(train_loader)
+    # loader = tqdm(train_loader)
 
-    loss_list = []
+    tot_loss = 0.0
+    tot_acc = 0.0
+    train_preds = []
+    train_trues = []
+
     # 用于混合精度训练,可以加快运算速率
     scaler = GradScaler()
 
-    for i, sample in enumerate(loader):
+    for i, sample in enumerate(train_loader):
         train_data_batch = sample['X'].to(device).double()
         train_label_batch = sample['y'].to(device).double()
 
         if mixed:
             with autocast():  # 半精度加速训练
                 output = model(train_data_batch)
-                loss = criterion(output, train_label_batch)
+                loss = criterion(output, train_label_batch.long())
             scaler.scale(loss).backward()
             scaler.step(optimizer)
             scaler.update()
             optimizer.zero_grad()
         else:
             output = model(train_data_batch)
-            loss = criterion(output, train_label_batch)
+            loss = criterion(output, train_label_batch.long())
             loss.backward()
             optimizer.step()
             optimizer.zero_grad()
-        loss_list.append(loss.item())
-        loader.set_postfix_str(
-            'lr:{:.8f}, loss: {:.4f}'.format(optimizer.param_groups[0]['lr'], np.mean(loss_list)))
+        tot_loss += loss.data
+        train_outputs = output.argmax(dim=1)
+
+        train_preds.extend(train_outputs.detach().cpu().numpy())
+        train_trues.extend(train_label_batch.detach().cpu().numpy())
+
+        tot_acc += (output.argmax(dim=1) == train_label_batch).sum().item()
+
+    sklearn_accuracy = accuracy_score(train_trues, train_preds)
+    sklearn_precision = precision_score(train_trues, train_preds, average='micro')
+    sklearn_recall = recall_score(train_trues, train_preds, average='micro')
+    sklearn_f1 = f1_score(train_trues, train_preds, average='micro')
 
     torch.cuda.empty_cache()
     if not verbose:
-        print('[ Training ] Lr:{:.8f}, Epoch Loss: {:.4f}'.format(optimizer.param_groups[0]['lr'], np.mean(loss_list)))
-    return np.mean(loss_list)
+        print(
+            "[sklearn_metrics] Epoch:{} Lr:{:.8f} loss:{:.4f} accuracy:{:.4f} precision:{:.4f} recall:{:.4f} f1:{:.4f}".format(
+                idx, optimizer.param_groups[0]['lr'], tot_loss, sklearn_accuracy, sklearn_precision, sklearn_recall,
+                sklearn_f1))
 
 
 # 调用torch.no_grad装饰器，验证阶段不进行梯度计算
@@ -74,17 +119,31 @@ def evaluate(model, device, test_loader, criterion):
     """
     model.eval()  # 指定是模型evaluate而不是train,BN和DropOut不会取平均值
 
-    loss_list = []
+    test_preds = []
+    test_trues = []
+    with torch.no_grad():
+        for i, sample in enumerate(test_loader):
+            test_data_batch = sample['X'].to(device).double()
+            test_label_batch = sample['y'].to(device).double()
+            output = model(test_data_batch)
+            test_output = output.argmax(dim=1)
+            # print(test_label_batch, test_output)
+            test_preds.extend(test_output.detach().cpu().numpy())
+            test_trues.extend(test_label_batch.detach().cpu().numpy())
+            loss = criterion(output, test_label_batch.long())
 
-    for i, sample in enumerate(test_loader):
-        test_data_batch = sample['X'].to(device).double()
-        test_label_batch = sample['y'].to(device).double()
-        output = model(test_data_batch)
-        loss = criterion(output, test_label_batch)
-        loss_list.append(loss.item())
-
-    print('[ Validation ] Loss: {:.4f}'.format(np.mean(loss_list)), end=' ')
-    return np.mean(loss_list)
+        sklearn_accuracy = accuracy_score(test_trues, test_preds)
+        sklearn_precision = precision_score(test_trues, test_preds, average='micro')
+        sklearn_recall = recall_score(test_trues, test_preds, average='micro')
+        sklearn_f1 = f1_score(test_trues, test_preds, average='micro')
+        print(classification_report(test_trues, test_preds))
+        conf_matrix = get_confusion_matrix(test_trues, test_preds)
+        print(conf_matrix)
+        plot_confusion_matrix(conf_matrix)
+        print("[sklearn_metrics] accuracy:{:.4f} precision:{:.4f} recall:{:.4f} f1:{:.4f}".format(sklearn_accuracy,
+                                                                                                  sklearn_precision,
+                                                                                                  sklearn_recall,
+                                                                                                  sklearn_f1))
 
 
 def set_random_seed(seed=512, benchmark=True):
